@@ -44,7 +44,7 @@ abstract class Controller_Application extends Controller_Template
            return $this->_ask_for_credentials();
         }
         else {
-            // If a credentials are supplied, attempt to authenticate
+            // If credentials are supplied, attempt to authenticate
             $username = Kohana::$config->load('bolknoms.administration.username');
             $password = Kohana::$config->load('bolknoms.administration.password');
             if ($_SERVER['PHP_AUTH_USER'] === $username && $_SERVER['PHP_AUTH_PW'] === $password) {
