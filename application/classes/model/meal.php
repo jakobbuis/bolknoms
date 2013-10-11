@@ -19,7 +19,7 @@ class Model_meal extends ORM
                                ),
                      'locked' => array(
                                    array('not_empty'),
-                                   array(array($this, 'valid_time'))
+                                   array(array($this, 'valid_datetime'))
                                )
                 );
     }
@@ -46,6 +46,7 @@ class Model_meal extends ORM
         // Include the meal from today, if the deadline still looms
         $this->or_where_open();
             $this->where('date', '=', date('Y-m-d'));
+            //FIXME needs updating
             $this->where('locked', '>=', strftime('%H:%I'));
         $this->where_close();
         // Enable method chaining for futher refinement
@@ -82,6 +83,7 @@ class Model_meal extends ORM
      */
     public function deadline()
     {
+        //FIXME change to deal correctly with earlier dates
         return strftime('%H:%M',strtotime($this->locked)).' uur';
     }
 
@@ -128,7 +130,7 @@ class Model_meal extends ORM
      * @param $time
      * @return bool
      */
-    public function valid_time($time)
+    public function valid_datetime($time)
     {
         return (strtotime($time) !== FALSE);
     }
@@ -152,6 +154,7 @@ class Model_meal extends ORM
      */
     public function open_for_registrations()
     {
+        //FIXME needs updating
         $closing_moment = strtotime($this->date.' '.$this->locked);
         return ($closing_moment > time());
     }
