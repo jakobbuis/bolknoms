@@ -46,8 +46,7 @@ class Model_meal extends ORM
         // Include the meal from today, if the deadline still looms
         $this->or_where_open();
             $this->where('date', '=', date('Y-m-d'));
-            //FIXME needs updating
-            $this->where('locked', '>=', strftime('%H:%I'));
+            $this->where('locked', '>=', strftime('%Y-%m-%d %H:%I'));
         $this->where_close();
         // Enable method chaining for futher refinement
         return $this;
@@ -83,8 +82,14 @@ class Model_meal extends ORM
      */
     public function deadline()
     {
-        //FIXME change to deal correctly with earlier dates
-        return strftime('%H:%M',strtotime($this->locked)).' uur';
+        if (date('Y-m-d', strtotime($this->date)) === date('Y-m-d', strtotime($this->locked))) {
+            // Meal locks on the day it is planned
+            return strftime('%H:%M',strtotime($this->locked));
+        }
+        else {
+            // Meal locks on a previous day
+            return strftime('%d-%m-%Y&nbsp;%H:%M', strtotime($this->locked));
+        }
     }
 
     /**
@@ -154,8 +159,7 @@ class Model_meal extends ORM
      */
     public function open_for_registrations()
     {
-        //FIXME needs updating
-        $closing_moment = strtotime($this->date.' '.$this->locked);
+        $closing_moment = strtotime($this->locked);
         return ($closing_moment > time());
     }
 
