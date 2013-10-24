@@ -1,0 +1,701 @@
+
+Fatal error: Class 'Kohana_UnitTest_TestCase' not found in /var/www/bolknoms/application/tests/SampleTest.php on line 4
+<style type="text/css">
+#kohana_error { background: #ddd; font-size: 1em; font-family:sans-serif; text-align: left; color: #111; }
+#kohana_error h1,
+#kohana_error h2 { margin: 0; padding: 1em; font-size: 1em; font-weight: normal; background: #911; color: #fff; }
+	#kohana_error h1 a,
+	#kohana_error h2 a { color: #fff; }
+#kohana_error h2 { background: #222; }
+#kohana_error h3 { margin: 0; padding: 0.4em 0 0; font-size: 1em; font-weight: normal; }
+#kohana_error p { margin: 0; padding: 0.2em 0; }
+#kohana_error a { color: #1b323b; }
+#kohana_error pre { overflow: auto; white-space: pre-wrap; }
+#kohana_error table { width: 100%; display: block; margin: 0 0 0.4em; padding: 0; border-collapse: collapse; background: #fff; }
+	#kohana_error table td { border: solid 1px #ddd; text-align: left; vertical-align: top; padding: 0.4em; }
+#kohana_error div.content { padding: 0.4em 1em 1em; overflow: hidden; }
+#kohana_error pre.source { margin: 0 0 1em; padding: 0.4em; background: #fff; border: dotted 1px #b7c680; line-height: 1.2em; }
+	#kohana_error pre.source span.line { display: block; }
+	#kohana_error pre.source span.highlight { background: #f0eb96; }
+		#kohana_error pre.source span.line span.number { color: #666; }
+#kohana_error ol.trace { display: block; margin: 0 0 0 2em; padding: 0; list-style: decimal; }
+	#kohana_error ol.trace li { margin: 0; padding: 0; }
+.js .collapsed { display: none; }
+</style>
+<script type="text/javascript">
+document.documentElement.className = document.documentElement.className + ' js';
+function koggle(elem)
+{
+	elem = document.getElementById(elem);
+
+	if (elem.style && elem.style['display'])
+		// Only works with the "style" attr
+		var disp = elem.style['display'];
+	else if (elem.currentStyle)
+		// For MSIE, naturally
+		var disp = elem.currentStyle['display'];
+	else if (window.getComputedStyle)
+		// For most other browsers
+		var disp = document.defaultView.getComputedStyle(elem, null).getPropertyValue('display');
+
+	// Toggle the state of the "display" style
+	elem.style.display = disp == 'block' ? 'none' : 'block';
+	return false;
+}
+</script>
+<div id="kohana_error">
+	<h1><span class="type">ErrorException [ Fatal Error ]:</span> <span class="message">Class &#039;Kohana_UnitTest_TestCase&#039; not found</span></h1>
+	<div id="error5262fd435fcf2" class="content">
+		<p><span class="file">APPPATH/tests/SampleTest.php [ 4 ]</span></p>
+		<pre class="source"><code><span class="line"><span class="number">1</span> &lt;?php
+</span><span class="line"><span class="number">2</span> 
+</span><span class="line"><span class="number">3</span> class SampleTest extends Kohana_UnitTest_TestCase
+</span><span class="line highlight"><span class="number">4</span> {
+</span><span class="line"><span class="number">5</span>   public function test_the_truth()
+</span><span class="line"><span class="number">6</span>   {
+</span><span class="line"><span class="number">7</span>     $this-&gt;assertTrue(true);
+</span><span class="line"><span class="number">8</span>   }
+</span><span class="line"><span class="number">9</span> }
+</span></code></pre>		<ol class="trace">
+					<li>
+				<p>
+					<span class="file">
+													{PHP internal call}
+											</span>
+					&raquo;
+					Kohana_Core::shutdown_handler()
+				</p>
+											</li>
+							</ol>
+	</div>
+	<h2><a href="#error5262fd435fcf2environment" onclick="return koggle('error5262fd435fcf2environment')">Environment</a></h2>
+	<div id="error5262fd435fcf2environment" class="content collapsed">
+				<h3><a href="#error5262fd435fcf2environment_included" onclick="return koggle('error5262fd435fcf2environment_included')">Included files</a> (57)</h3>
+		<div id="error5262fd435fcf2environment_included" class="collapsed">
+			<table cellspacing="0">
+								<tr>
+					<td><code>DOCROOT/vendor/phpunit/phpunit/composer/bin/phpunit</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/autoload.php</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/composer/autoload_real.php</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/composer/ClassLoader.php</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/composer/include_paths.php</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/composer/autoload_namespaces.php</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/composer/autoload_classmap.php</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/phpunit/phpunit/PHPUnit/TextUI/Command.php</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/phpunit/phpunit/PHPUnit/Util/Getopt.php</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/phpunit/phpunit/PHPUnit/Util/Fileloader.php</code></td>
+				</tr>
+								<tr>
+					<td><code>APPPATH/tests/bootstrap.php</code></td>
+				</tr>
+								<tr>
+					<td><code>APPPATH/bootstrap.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Core.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/I18n.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/I18n.php</code></td>
+				</tr>
+								<tr>
+					<td><code>APPPATH/classes/Kohana/Exception.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Kohana/Exception.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Log.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Log.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Config.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Config.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Log/File.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Log/File.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Log/Writer.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Log/Writer.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Config/File.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Config/File.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Config/File/Reader.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Config/Reader.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Config/Source.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Cookie.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Cookie.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Route.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Route.php</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/phpunit/phpunit/PHPUnit/TextUI/TestRunner.php</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/phpunit/phpunit/PHPUnit/Runner/BaseTestRunner.php</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/phpunit/php-code-coverage/PHP/CodeCoverage/Filter.php</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/phpunit/phpunit/PHPUnit/Runner/StandardTestSuiteLoader.php</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/phpunit/phpunit/PHPUnit/Runner/TestSuiteLoader.php</code></td>
+				</tr>
+								<tr>
+					<td><code>DOCROOT/vendor/phpunit/phpunit/PHPUnit/Util/Class.php</code></td>
+				</tr>
+								<tr>
+					<td><code>APPPATH/tests/SampleTest.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Debug.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Debug.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Date.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Date.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/View.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/View.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Response.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/Response.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/HTTP/Response.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/HTTP/Response.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/HTTP/Message.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/HTTP/Message.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/HTTP/Header.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/classes/Kohana/HTTP/Header.php</code></td>
+				</tr>
+								<tr>
+					<td><code>SYSPATH/views/kohana/error.php</code></td>
+				</tr>
+							</table>
+		</div>
+				<h3><a href="#error5262fd435fcf2environment_loaded" onclick="return koggle('error5262fd435fcf2environment_loaded')">Loaded extensions</a> (51)</h3>
+		<div id="error5262fd435fcf2environment_loaded" class="collapsed">
+			<table cellspacing="0">
+								<tr>
+					<td><code>Core</code></td>
+				</tr>
+								<tr>
+					<td><code>date</code></td>
+				</tr>
+								<tr>
+					<td><code>ereg</code></td>
+				</tr>
+								<tr>
+					<td><code>libxml</code></td>
+				</tr>
+								<tr>
+					<td><code>openssl</code></td>
+				</tr>
+								<tr>
+					<td><code>pcre</code></td>
+				</tr>
+								<tr>
+					<td><code>zlib</code></td>
+				</tr>
+								<tr>
+					<td><code>bcmath</code></td>
+				</tr>
+								<tr>
+					<td><code>bz2</code></td>
+				</tr>
+								<tr>
+					<td><code>calendar</code></td>
+				</tr>
+								<tr>
+					<td><code>ctype</code></td>
+				</tr>
+								<tr>
+					<td><code>dba</code></td>
+				</tr>
+								<tr>
+					<td><code>dom</code></td>
+				</tr>
+								<tr>
+					<td><code>hash</code></td>
+				</tr>
+								<tr>
+					<td><code>fileinfo</code></td>
+				</tr>
+								<tr>
+					<td><code>filter</code></td>
+				</tr>
+								<tr>
+					<td><code>ftp</code></td>
+				</tr>
+								<tr>
+					<td><code>gettext</code></td>
+				</tr>
+								<tr>
+					<td><code>SPL</code></td>
+				</tr>
+								<tr>
+					<td><code>iconv</code></td>
+				</tr>
+								<tr>
+					<td><code>json</code></td>
+				</tr>
+								<tr>
+					<td><code>mbstring</code></td>
+				</tr>
+								<tr>
+					<td><code>pcntl</code></td>
+				</tr>
+								<tr>
+					<td><code>session</code></td>
+				</tr>
+								<tr>
+					<td><code>posix</code></td>
+				</tr>
+								<tr>
+					<td><code>readline</code></td>
+				</tr>
+								<tr>
+					<td><code>Reflection</code></td>
+				</tr>
+								<tr>
+					<td><code>standard</code></td>
+				</tr>
+								<tr>
+					<td><code>shmop</code></td>
+				</tr>
+								<tr>
+					<td><code>SimpleXML</code></td>
+				</tr>
+								<tr>
+					<td><code>soap</code></td>
+				</tr>
+								<tr>
+					<td><code>sockets</code></td>
+				</tr>
+								<tr>
+					<td><code>Phar</code></td>
+				</tr>
+								<tr>
+					<td><code>exif</code></td>
+				</tr>
+								<tr>
+					<td><code>sysvmsg</code></td>
+				</tr>
+								<tr>
+					<td><code>sysvsem</code></td>
+				</tr>
+								<tr>
+					<td><code>sysvshm</code></td>
+				</tr>
+								<tr>
+					<td><code>tokenizer</code></td>
+				</tr>
+								<tr>
+					<td><code>wddx</code></td>
+				</tr>
+								<tr>
+					<td><code>xml</code></td>
+				</tr>
+								<tr>
+					<td><code>xmlreader</code></td>
+				</tr>
+								<tr>
+					<td><code>xmlwriter</code></td>
+				</tr>
+								<tr>
+					<td><code>zip</code></td>
+				</tr>
+								<tr>
+					<td><code>PDO</code></td>
+				</tr>
+								<tr>
+					<td><code>curl</code></td>
+				</tr>
+								<tr>
+					<td><code>ldap</code></td>
+				</tr>
+								<tr>
+					<td><code>mysql</code></td>
+				</tr>
+								<tr>
+					<td><code>mysqli</code></td>
+				</tr>
+								<tr>
+					<td><code>pdo_mysql</code></td>
+				</tr>
+								<tr>
+					<td><code>mcrypt</code></td>
+				</tr>
+								<tr>
+					<td><code>mhash</code></td>
+				</tr>
+							</table>
+		</div>
+																<h3><a href="#error5262fd435fcf2environment_server" onclick="return koggle('error5262fd435fcf2environment_server')">$_SERVER</a></h3>
+		<div id="error5262fd435fcf2environment_server" class="collapsed">
+			<table cellspacing="0">
+								<tr>
+					<td><code>LC_PAPER</code></td>
+					<td><pre><small>string</small><span>(11)</span> "nl_NL.UTF-8"</pre></td>
+				</tr>
+								<tr>
+					<td><code>LC_ADDRESS</code></td>
+					<td><pre><small>string</small><span>(11)</span> "nl_NL.UTF-8"</pre></td>
+				</tr>
+								<tr>
+					<td><code>SSH_AGENT_PID</code></td>
+					<td><pre><small>string</small><span>(4)</span> "2199"</pre></td>
+				</tr>
+								<tr>
+					<td><code>rvm_bin_path</code></td>
+					<td><pre><small>string</small><span>(20)</span> "/home/jakob/.rvm/bin"</pre></td>
+				</tr>
+								<tr>
+					<td><code>LC_MONETARY</code></td>
+					<td><pre><small>string</small><span>(11)</span> "nl_NL.UTF-8"</pre></td>
+				</tr>
+								<tr>
+					<td><code>GEM_HOME</code></td>
+					<td><pre><small>string</small><span>(37)</span> "/home/jakob/.rvm/gems/ruby-2.0.0-p195"</pre></td>
+				</tr>
+								<tr>
+					<td><code>GPG_AGENT_INFO</code></td>
+					<td><pre><small>string</small><span>(38)</span> "/run/user/jakob/keyring-4lFMCo/gpg:0:1"</pre></td>
+				</tr>
+								<tr>
+					<td><code>TERM</code></td>
+					<td><pre><small>string</small><span>(5)</span> "xterm"</pre></td>
+				</tr>
+								<tr>
+					<td><code>SHELL</code></td>
+					<td><pre><small>string</small><span>(9)</span> "/bin/bash"</pre></td>
+				</tr>
+								<tr>
+					<td><code>XDG_SESSION_COOKIE</code></td>
+					<td><pre><small>string</small><span>(61)</span> "9fc45d49ae1d807eb4a9ab45518f7d0e-1382102386.216593-2091629291"</pre></td>
+				</tr>
+								<tr>
+					<td><code>IRBRC</code></td>
+					<td><pre><small>string</small><span>(46)</span> "/home/jakob/.rvm/rubies/ruby-2.0.0-p195/.irbrc"</pre></td>
+				</tr>
+								<tr>
+					<td><code>WINDOWID</code></td>
+					<td><pre><small>string</small><span>(8)</span> "73400325"</pre></td>
+				</tr>
+								<tr>
+					<td><code>LC_NUMERIC</code></td>
+					<td><pre><small>string</small><span>(11)</span> "nl_NL.UTF-8"</pre></td>
+				</tr>
+								<tr>
+					<td><code>OLDPWD</code></td>
+					<td><pre><small>string</small><span>(8)</span> "/var/www"</pre></td>
+				</tr>
+								<tr>
+					<td><code>GNOME_KEYRING_CONTROL</code></td>
+					<td><pre><small>string</small><span>(30)</span> "/run/user/jakob/keyring-4lFMCo"</pre></td>
+				</tr>
+								<tr>
+					<td><code>MY_RUBY_HOME</code></td>
+					<td><pre><small>string</small><span>(39)</span> "/home/jakob/.rvm/rubies/ruby-2.0.0-p195"</pre></td>
+				</tr>
+								<tr>
+					<td><code>GTK_MODULES</code></td>
+					<td><pre><small>string</small><span>(17)</span> "overlay-scrollbar"</pre></td>
+				</tr>
+								<tr>
+					<td><code>USER</code></td>
+					<td><pre><small>string</small><span>(5)</span> "jakob"</pre></td>
+				</tr>
+								<tr>
+					<td><code>LS_COLORS</code></td>
+					<td><pre><small>string</small><span>(1302)</span> "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:&nbsp;&hellip;"</pre></td>
+				</tr>
+								<tr>
+					<td><code>LC_TELEPHONE</code></td>
+					<td><pre><small>string</small><span>(11)</span> "nl_NL.UTF-8"</pre></td>
+				</tr>
+								<tr>
+					<td><code>XDG_SESSION_PATH</code></td>
+					<td><pre><small>string</small><span>(40)</span> "/org/freedesktop/DisplayManager/Session0"</pre></td>
+				</tr>
+								<tr>
+					<td><code>rvm_path</code></td>
+					<td><pre><small>string</small><span>(16)</span> "/home/jakob/.rvm"</pre></td>
+				</tr>
+								<tr>
+					<td><code>XDG_SEAT_PATH</code></td>
+					<td><pre><small>string</small><span>(37)</span> "/org/freedesktop/DisplayManager/Seat0"</pre></td>
+				</tr>
+								<tr>
+					<td><code>SSH_AUTH_SOCK</code></td>
+					<td><pre><small>string</small><span>(34)</span> "/run/user/jakob/keyring-4lFMCo/ssh"</pre></td>
+				</tr>
+								<tr>
+					<td><code>DEFAULTS_PATH</code></td>
+					<td><pre><small>string</small><span>(36)</span> "/usr/share/gconf/ubuntu.default.path"</pre></td>
+				</tr>
+								<tr>
+					<td><code>SESSION_MANAGER</code></td>
+					<td><pre><small>string</small><span>(75)</span> "local/LAPTOPJAKOB:@/tmp/.ICE-unix/2153,unix/LAPTOPJAKOB:/tmp/.ICE-unix/2153"</pre></td>
+				</tr>
+								<tr>
+					<td><code>XDG_CONFIG_DIRS</code></td>
+					<td><pre><small>string</small><span>(28)</span> "/etc/xdg/xdg-ubuntu:/etc/xdg"</pre></td>
+				</tr>
+								<tr>
+					<td><code>rvm_prefix</code></td>
+					<td><pre><small>string</small><span>(11)</span> "/home/jakob"</pre></td>
+				</tr>
+								<tr>
+					<td><code>PATH</code></td>
+					<td><pre><small>string</small><span>(312)</span> "/usr/local/heroku/bin:/home/jakob/.rvm/gems/ruby-2.0.0-p195/bin:/home/jakob/.rvm/gems/ruby-2.0.0-p195@global/bin:/home/jakob/.rv&nbsp;&hellip;"</pre></td>
+				</tr>
+								<tr>
+					<td><code>DESKTOP_SESSION</code></td>
+					<td><pre><small>string</small><span>(6)</span> "ubuntu"</pre></td>
+				</tr>
+								<tr>
+					<td><code>LC_IDENTIFICATION</code></td>
+					<td><pre><small>string</small><span>(11)</span> "nl_NL.UTF-8"</pre></td>
+				</tr>
+								<tr>
+					<td><code>PWD</code></td>
+					<td><pre><small>string</small><span>(17)</span> "/var/www/bolknoms"</pre></td>
+				</tr>
+								<tr>
+					<td><code>GNOME_KEYRING_PID</code></td>
+					<td><pre><small>string</small><span>(4)</span> "2142"</pre></td>
+				</tr>
+								<tr>
+					<td><code>LANG</code></td>
+					<td><pre><small>string</small><span>(11)</span> "en_US.UTF-8"</pre></td>
+				</tr>
+								<tr>
+					<td><code>MANDATORY_PATH</code></td>
+					<td><pre><small>string</small><span>(38)</span> "/usr/share/gconf/ubuntu.mandatory.path"</pre></td>
+				</tr>
+								<tr>
+					<td><code>LC_MEASUREMENT</code></td>
+					<td><pre><small>string</small><span>(11)</span> "nl_NL.UTF-8"</pre></td>
+				</tr>
+								<tr>
+					<td><code>NODE_PATH</code></td>
+					<td><pre><small>string</small><span>(59)</span> "/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript"</pre></td>
+				</tr>
+								<tr>
+					<td><code>UBUNTU_MENUPROXY</code></td>
+					<td><pre><small>string</small><span>(13)</span> "libappmenu.so"</pre></td>
+				</tr>
+								<tr>
+					<td><code>COMPIZ_CONFIG_PROFILE</code></td>
+					<td><pre><small>string</small><span>(6)</span> "ubuntu"</pre></td>
+				</tr>
+								<tr>
+					<td><code>GDMSESSION</code></td>
+					<td><pre><small>string</small><span>(6)</span> "ubuntu"</pre></td>
+				</tr>
+								<tr>
+					<td><code>rvm_version</code></td>
+					<td><pre><small>string</small><span>(16)</span> "1.20.13 (stable)"</pre></td>
+				</tr>
+								<tr>
+					<td><code>SHLVL</code></td>
+					<td><pre><small>string</small><span>(1)</span> "1"</pre></td>
+				</tr>
+								<tr>
+					<td><code>HOME</code></td>
+					<td><pre><small>string</small><span>(11)</span> "/home/jakob"</pre></td>
+				</tr>
+								<tr>
+					<td><code>GNOME_DESKTOP_SESSION_ID</code></td>
+					<td><pre><small>string</small><span>(18)</span> "this-is-deprecated"</pre></td>
+				</tr>
+								<tr>
+					<td><code>LOGNAME</code></td>
+					<td><pre><small>string</small><span>(5)</span> "jakob"</pre></td>
+				</tr>
+								<tr>
+					<td><code>COMPIZ_BIN_PATH</code></td>
+					<td><pre><small>string</small><span>(9)</span> "/usr/bin/"</pre></td>
+				</tr>
+								<tr>
+					<td><code>GEM_PATH</code></td>
+					<td><pre><small>string</small><span>(82)</span> "/home/jakob/.rvm/gems/ruby-2.0.0-p195:/home/jakob/.rvm/gems/ruby-2.0.0-p195@global"</pre></td>
+				</tr>
+								<tr>
+					<td><code>XDG_DATA_DIRS</code></td>
+					<td><pre><small>string</small><span>(64)</span> "/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/"</pre></td>
+				</tr>
+								<tr>
+					<td><code>DBUS_SESSION_BUS_ADDRESS</code></td>
+					<td><pre><small>string</small><span>(72)</span> "unix:abstract=/tmp/dbus-smyHgtP9X1,guid=9ad470f2c2d5e3d43e620a3452613572"</pre></td>
+				</tr>
+								<tr>
+					<td><code>LESSOPEN</code></td>
+					<td><pre><small>string</small><span>(22)</span> "| /usr/bin/lesspipe %s"</pre></td>
+				</tr>
+								<tr>
+					<td><code>TEXTDOMAIN</code></td>
+					<td><pre><small>string</small><span>(9)</span> "im-config"</pre></td>
+				</tr>
+								<tr>
+					<td><code>XDG_RUNTIME_DIR</code></td>
+					<td><pre><small>string</small><span>(15)</span> "/run/user/jakob"</pre></td>
+				</tr>
+								<tr>
+					<td><code>DISPLAY</code></td>
+					<td><pre><small>string</small><span>(2)</span> ":0"</pre></td>
+				</tr>
+								<tr>
+					<td><code>XDG_CURRENT_DESKTOP</code></td>
+					<td><pre><small>string</small><span>(5)</span> "Unity"</pre></td>
+				</tr>
+								<tr>
+					<td><code>RUBY_VERSION</code></td>
+					<td><pre><small>string</small><span>(15)</span> "ruby-2.0.0-p195"</pre></td>
+				</tr>
+								<tr>
+					<td><code>LESSCLOSE</code></td>
+					<td><pre><small>string</small><span>(23)</span> "/usr/bin/lesspipe %s %s"</pre></td>
+				</tr>
+								<tr>
+					<td><code>LC_TIME</code></td>
+					<td><pre><small>string</small><span>(11)</span> "nl_NL.UTF-8"</pre></td>
+				</tr>
+								<tr>
+					<td><code>TEXTDOMAINDIR</code></td>
+					<td><pre><small>string</small><span>(18)</span> "/usr/share/locale/"</pre></td>
+				</tr>
+								<tr>
+					<td><code>COLORTERM</code></td>
+					<td><pre><small>string</small><span>(14)</span> "gnome-terminal"</pre></td>
+				</tr>
+								<tr>
+					<td><code>XAUTHORITY</code></td>
+					<td><pre><small>string</small><span>(23)</span> "/home/jakob/.Xauthority"</pre></td>
+				</tr>
+								<tr>
+					<td><code>LC_NAME</code></td>
+					<td><pre><small>string</small><span>(11)</span> "nl_NL.UTF-8"</pre></td>
+				</tr>
+								<tr>
+					<td><code>_</code></td>
+					<td><pre><small>string</small><span>(18)</span> "vendor/bin/phpunit"</pre></td>
+				</tr>
+								<tr>
+					<td><code>PHP_SELF</code></td>
+					<td><pre><small>string</small><span>(18)</span> "vendor/bin/phpunit"</pre></td>
+				</tr>
+								<tr>
+					<td><code>SCRIPT_NAME</code></td>
+					<td><pre><small>string</small><span>(18)</span> "vendor/bin/phpunit"</pre></td>
+				</tr>
+								<tr>
+					<td><code>SCRIPT_FILENAME</code></td>
+					<td><pre><small>string</small><span>(18)</span> "vendor/bin/phpunit"</pre></td>
+				</tr>
+								<tr>
+					<td><code>PATH_TRANSLATED</code></td>
+					<td><pre><small>string</small><span>(18)</span> "vendor/bin/phpunit"</pre></td>
+				</tr>
+								<tr>
+					<td><code>DOCUMENT_ROOT</code></td>
+					<td><pre><small>string</small><span>(0)</span> ""</pre></td>
+				</tr>
+								<tr>
+					<td><code>REQUEST_TIME_FLOAT</code></td>
+					<td><pre><small>float</small> 1382219075.3743</pre></td>
+				</tr>
+								<tr>
+					<td><code>REQUEST_TIME</code></td>
+					<td><pre><small>integer</small> 1382219075</pre></td>
+				</tr>
+								<tr>
+					<td><code>argv</code></td>
+					<td><pre><small>array</small><span>(3)</span> <span>(
+    0 => <small>string</small><span>(18)</span> "vendor/bin/phpunit"
+    1 => <small>string</small><span>(43)</span> "--bootstrap=application/tests/bootstrap.php"
+    2 => <small>string</small><span>(32)</span> "application/tests/SampleTest.php"
+)</span></pre></td>
+				</tr>
+								<tr>
+					<td><code>argc</code></td>
+					<td><pre><small>integer</small> 3</pre></td>
+				</tr>
+							</table>
+		</div>
+			</div>
+</div>
